@@ -1,0 +1,16 @@
+
+//el-main 路由切换动画
+.fade-transform-leave-active,
+.fade-transform-enter-active {
+    transition: all .5s;
+}
+
+.fade-transform-enter {
+    opacity  : 0;
+    transform: translateX(-30px);
+}
+
+.fade-transform-leave-to {
+    opacity  : 0;
+    transform: translateX(20px);  //改为30px以上有滚动条，还没想好怎样解决，本来想对称的
+}
